@@ -14,12 +14,29 @@ body {
 }
 
 .clockFace {
-  background-color: blue;
+  background-image: -webkit-gradient(linear, left top, right top, from(#060661), to(#280303));
+  background-image: linear-gradient(to right, #060661, #280303);
   position: absolute;
   top: 17px;
   right: 20px;
   width: 290px;
   height: 45vh;
   border-radius: 1000%;
+}
+
+.hand {
+  position: absolute;
+  background-color: white;
+  z-index: 84;
+  width: 120px;
+  height: 5px;
+  top: 130px;
+  right: 130px;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 /*# sourceMappingURL=styles.css.map */

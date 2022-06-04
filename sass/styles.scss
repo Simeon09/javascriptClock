@@ -12,7 +12,8 @@ body{
     position: relative;
 }
 .clockFace{
-    background-color: blue;
+    background-image: linear-gradient(to right , rgb(6, 6, 97),rgb(40, 3, 3));
+
     position: absolute;
     // transform: translateX(200px);
     // transform: translateY(90px);
@@ -21,4 +22,20 @@ body{
     width: 290px;
     height: 45vh;
     border-radius: 1000%;
+    
 }
+.hand{
+    position: absolute;
+    background-color: white;
+    
+    z-index: 84;
+    width: 120px;
+    height: 5px;
+    
+    top: 130px;
+    right: 130px;
+    transform-origin: 100%;
+     transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
