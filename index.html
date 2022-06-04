@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,27 @@
     <title>Javascript clock</title>
     <link rel="stylesheet" href="./sass/styles.css">
 </head>
+
 <body>
     <div class="clock">
         <div class="clockFace">
-            <div class="hand hoursHand"></div>
+            <div class="hand hoursHand" id="hours"></div>
             <div class="hand minuteHands"></div>
-            <div class="hand secondsHands"></div>
+            <div class="hand secondsHands" id="seconds"></div>
         </div>
     </div>
+    <script>
+        const seconds = document.querySelector('#hours')
+        function setDate() {
+            const setSeconds = new Date();
+            const getSecond = setSeconds.getSeconds();
+            const degreeSeconds = ((getSecond / 60) * 360);
+            console.log(degreeSeconds)  
+        }
+        seconds.innerHTML('blue')  
+
+        setInterval(setDate, 1000)
+    </script>
 </body>
+
 </html>
