@@ -1,0 +1,25 @@
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#060661), to(#280303));
+  background-image: linear-gradient(to right, #060661, #280303);
+}
+
+.clock {
+  background-color: white;
+  margin: auto;
+  margin-top: 30vh;
+  width: 330px;
+  height: 50vh;
+  border-radius: 100%;
+  position: relative;
+}
+
+.clockFace {
+  background-color: blue;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 290px;
+  height: 45vh;
+  border-radius: 1000%;
+}
+/*# sourceMappingURL=styles.css.map */

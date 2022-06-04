@@ -1,0 +1,24 @@
+body{
+    background-image: linear-gradient(to right , rgb(6, 6, 97),rgb(40, 3, 3));
+}
+
+.clock{
+    background-color: white;
+    margin: auto;
+    margin-top: 30vh;
+    width: 330px;
+    height: 50vh;
+    border-radius: 100%;
+    position: relative;
+}
+.clockFace{
+    background-color: blue;
+    position: absolute;
+    // transform: translateX(200px);
+    // transform: translateY(90px);
+    top: 17px;
+    right: 20px;
+    width: 290px;
+    height: 45vh;
+    border-radius: 1000%;
+}
