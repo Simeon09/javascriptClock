@@ -8,7 +8,7 @@ body {
   margin: auto;
   margin-top: 30vh;
   width: 330px;
-  height: 50vh;
+  height: 320px;
   border-radius: 100%;
   position: relative;
 }
@@ -17,10 +17,10 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#060661), to(#280303));
   background-image: linear-gradient(to right, #060661, #280303);
   position: absolute;
-  top: 17px;
+  top: 20px;
   right: 20px;
   width: 290px;
-  height: 45vh;
+  height: 280px;
   border-radius: 1000%;
 }
 
