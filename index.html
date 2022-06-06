@@ -18,14 +18,15 @@
         </div>
     </div>
     <script>
-        const seconds = document.querySelector('#hours')
+        const seconds = document.querySelector('.secondsHands')
         function setDate() {
             const setSeconds = new Date();
             const getSecond = setSeconds.getSeconds();
-            const degreeSeconds = ((getSecond / 60) * 360);
+            const degreeSeconds = (((getSecond / 60) * 360)+ 90);
+            seconds.style.transform = `rotate(${degreeSeconds}deg)`;
             console.log(degreeSeconds)  
         }
-        seconds.innerHTML('blue')  
+        // seconds.innerHTML('blue')  
 
         setInterval(setDate, 1000)
     </script>
